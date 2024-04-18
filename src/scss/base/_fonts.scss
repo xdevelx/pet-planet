@@ -1,0 +1,17 @@
+// onest-regular - cyrillic_latin
+@font-face {
+  font-family: Onest;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/onest-v6-cyrillic_latin-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+// onest-700 - cyrillic_latin
+@font-face {
+  font-family: Onest;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/onest-v6-cyrillic_latin-700.woff2") format("woff2");
+  font-display: swap;
+}

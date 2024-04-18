@@ -1,0 +1,68 @@
+/* stylelint-disable no-duplicate-selectors */
+:root {
+  --light: #fdeee3;
+  --light-rgba: rgba(253, 238, 227, 10%);
+  --purple: #a346cf;
+  --carrot: #e47537;
+  --green: #008234;
+  --gradient-step: 16px;
+
+  @media (min-width: 768px) {
+    --gradient-step: 37px;
+  }
+
+  @media (min-width: 1440px) {
+    --gradient-step: 51px;
+  }
+
+  --bg-gradient:
+    repeating-linear-gradient(
+      90deg,
+      var(--light-rgba) 0,
+      var(--light-rgba) 1px,
+      transparent 1px,
+      transparent var(--gradient-step)
+    ),
+    repeating-linear-gradient(
+      180deg,
+      var(--light-rgba) 0,
+      var(--light-rgba) 1px,
+      transparent 1px,
+      transparent var(--gradient-step)
+    );
+  --font-family: "Onest", sans-serif;
+
+  // Font sizes
+  --font-size-text: 1rem;
+  --font-size-text-small: .75rem;
+  --font-size-h1: 1.875rem;
+  --font-size-h2: 1.25rem;
+
+  @media (min-width: 768px) {
+    --font-size-text: 1.25rem;
+    --font-size-text-small: 1rem;
+    --font-size-h1: 2.75rem;
+    --font-size-h2: 1.5rem;
+  }
+
+  @media (min-width: 1440px) {
+    --font-size-text: 1.5rem;
+    --font-size-h1: 3.25rem;
+    --font-size-h2: 1.75rem;
+  }
+}
+
+:root {
+  --content-width: 1300px;
+  --grid-gap: 20px;
+  --container-offset: 14px;
+  --container-width: calc(var(--content-width) + (2 * var(--container-offset)));
+
+  @media (min-width: 768px) {
+    --container-offset: 46px;
+  }
+
+  @media (min-width: 1024px) {
+    --container-offset: 52px;
+  }
+}

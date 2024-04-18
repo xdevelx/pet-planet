@@ -1,0 +1,72 @@
+// stylelint-disable declaration-no-important
+
+// Base styles
+
+// Apply box-sizing to include padding and border in element dimensions.
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Set the tap highlight color to transparent for WebKit browsers.
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0%);
+}
+
+body {
+  // Sets the margin to 0.
+  margin: 0;
+}
+
+// Form styles
+
+// Inherit fonts for form elements and buttons.
+input,
+button,
+select,
+optgroup,
+textarea {
+  font: inherit;
+}
+
+// Allow the textarea to be resized only vertically.
+textarea {
+  resize: vertical;
+}
+
+// Media styles
+
+// Limit media elements to container width and eliminate bottom space.
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+// Remove border from iframes
+iframe {
+  border: 0;
+}
+
+// Table styles
+
+// Remove unnecessary spacing between table cells.
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+// Animations styles
+
+// Remove all animations and transitions for people that prefer not to see them.
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
